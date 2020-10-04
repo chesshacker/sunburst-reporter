@@ -1,0 +1,9 @@
+emailList: []
+geo: "29.6434281,-98.4330558" # San Antonio, Texas
+name: Sunburst # prefixes all the stack resources
+schedule:
+  # in UTC, see https://docs.aws.amazon.com/cdk/api/latest/docs/@aws-cdk_aws-events.CronOptions.html
+  hour: "1,19" # local 8pm and 2pm CDT
+  minute: "0"
+ssmParameterName: sunburst-config
+timeZone: America/Chicago
