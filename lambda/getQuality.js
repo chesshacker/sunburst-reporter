@@ -23,7 +23,7 @@ exports.handler = async function () {
   console.log({body});
 
   if (SUNBURST_REPORT_TOPIC) {
-    reportQuality(quality);
+    await reportQuality(quality);
   }
 
   return {
